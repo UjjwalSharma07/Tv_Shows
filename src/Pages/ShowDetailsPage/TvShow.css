@@ -4,6 +4,7 @@
     display: flex;
     flex-direction:column;
     align-items: center;
+    overflow: hidden;
 }
 .TvShow__intro{
     width: 80%;
@@ -62,6 +63,7 @@
 .TvShow__detailRightBottom {
     margin: 2rem 0;
     flex: 0.8;
+    
 }
 .summary {
     font-size: 1.5rem;
@@ -70,4 +72,91 @@
     display: flex;
     position: relative;
     align-items: center;
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+    
+    .TvShow__intro {
+        width: screen;
+    }
+    
+    .TvShow__details {
+        width: 90%;
+        display: flex;
+        gap: 30px;
+    }
+    .TvShow__detailLeft {
+      
+        flex: 1;
+    }
+    .TvShow__detailRight {
+       
+        flex: 2;
+        overflow: hidden;
+    }
+    .TvShow__detailRightTop{
+        position: relative;
+        top: 139px;
+    }
+    
+    .TvShow__detailRightBottom{
+        position: relative;
+        top: 119px;
+        padding-right: 20px;
+
+    }
+    .backdrop__img {
+       
+        height: 200px;
+    }
+    
+    .TvShow__poster {
+        width: 158px;
+        margin-right: 1rem;
+    }
+    .poster__img{
+        width: 150px;
+        position: relative;
+        left: 30px;
+    }
+    
+    .TvShow__name {
+    font-size: 1.5rem;
+    }
+    
+    
+    .TvShow__genres {
+    margin-bottom: 1.25rem;
+    }
+    
+    .TvShow__genre {
+    padding: .25rem;
+    font-size: 0.8rem;
+    margin-right: .5rem;
+    }
+    
+    .summary {
+    font-size: 1.25rem;
+    }
+
+}
+@media (max-width: 768px) { /* For tablet devices */
+    /* .TvShow__detailLeft {
+        margin-right: -48px;
+    } */
+    .TvShow__details {
+        width: 90%;
+        display: flex;
+        gap: 1px;
+    }
+    .TvShow__detailLeft {
+      
+        flex: 1;
+    }
+    .TvShow__detailRight {
+       
+        flex: 2;
+        overflow: hidden;
+    }
+   
 }
