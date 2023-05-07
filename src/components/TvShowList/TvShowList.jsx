@@ -21,7 +21,7 @@ const TvShowList = () => {
         });
     }, []);
   return (
-    <div>
+    <div className="TvshowLsist">
         {loading ? (
           <SkeletonTheme color="#333333" highlightColor="#444444">
             <div className="list__cards">

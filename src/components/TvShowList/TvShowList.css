@@ -1,34 +1,74 @@
 .list__cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 8rem 2rem 2rem 9.5rem;
+  overflow: hidden;
+}
+
+.list__cards > * {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.list__cards img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.list__cards h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.list__cards p {
+  font-size: 1rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .list__cards {
+    padding: 4rem 1rem 1rem 1rem;
    
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    padding: 8rem 2rem 2rem 9.5rem;
-    overflow: hidden;
-    
   }
-  
-  .list__cards > * {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 0.5rem;
-    overflow: hidden;
-  }
-  
-  .list__cards img {
-    display: block;
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-  }
-  
+
   .list__cards h3 {
-    font-size: 1.2rem;
-    margin: 0.5rem;
-    text-align: center;
+    font-size: 1rem;
+  }
+  .list__cards p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .list__cards {
+    padding: 6rem 1.5rem 1.5rem 6rem;
   }
   
-  .list__cards p {
-    font-size: 1rem;
-    margin: 0.5rem;
-    text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  .list__cards {
+    padding: 2rem 0.5rem 0.5rem 0.5rem;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+ 
+  .list__cards h3 {
+    font-size: 1rem;
+  }
+  .list__cards p {
+    font-size: 0.8rem;
+  }
+}
+
+
+
