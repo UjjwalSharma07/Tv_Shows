@@ -1,0 +1,73 @@
+.TvShow {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+.TvShow__intro{
+    width: 80%;
+}
+.backdrop__img {
+    width: 100%;
+    height: 500px;
+    object-fit:cover;
+    object-position: 0 10%;
+}
+.TvShow__details {
+    align-items: center;
+    width: 75%;
+    display: flex;
+    position: relative;
+    bottom: 225px;
+}
+.TvShow__detailLeft {
+    margin-right: 30px;
+}
+.TvShow__poster {
+    width:300px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.86) 0px 22px 40px 6px;
+}
+.TvShow__detailRight {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    justify-content:space-between ;
+}
+.TvShow__detailRightTop > div{
+    text-shadow: 0px 0px 5px #000000;
+    margin-bottom: .5rem;
+}
+.TvShow__name {
+    font-weight: 600;
+    font-size: 3rem;
+}
+.TvShow__rating{
+    display: flex;
+    gap: 5px;
+}
+
+.TvShow__genres {
+    margin: 1.25rem 0;
+}
+.TvShow__genre {
+    padding: .5rem;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-right: 1rem;
+}
+
+.TvShow__detailRightBottom {
+    margin: 2rem 0;
+    flex: 0.8;
+}
+.summary {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
